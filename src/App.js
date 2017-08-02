@@ -5,9 +5,9 @@ import {
 	Link
 } from 'react-router-dom'
 
-import Home from 'sites/Home/Home'
-import NewProject from 'sites/Project/New/New'
-import Profile from 'sites/Profile/Profile'
+import Home from 'pages/Home/Home'
+import NewProject from 'pages/Project/New/New'
+import Profile from 'pages/Profile/Profile'
 
 class App extends Component {
   render() {
