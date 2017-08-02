@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import {
 	BrowserRouter as Router,
-	Route, 
-	Link
+	Route
 } from 'react-router-dom'
+
+import Navbar from 'components/navbar/navbar'
 
 import Home from 'pages/Home/Home'
 import NewProject from 'pages/Project/New/New'
@@ -16,19 +17,13 @@ class App extends Component {
     return (
       <Router>
 		  <div>
-			  <ul>
-				  <li><Link to='/'>Home</Link></li>
-				  <li><Link to='/new'>Create New Project</Link></li>
-				  <li><Link to='/profile'>Profile Page</Link></li>
-				  <li><Link to='/login'>Login</Link></li>
-				  <li><Link to='/register'>Register</Link></li>
-			  </ul>
+			<Navbar />
 
-			  <Route exact path='/' component={Home} />
-			  <Route path='/new' component={NewProject} />
-			  <Route path='/profile' component={Profile} />
-			  <Route path='/login' component={Login} />
-			  <Route path='/register' component={Register} />
+			<Route exact path='/' component={Home} />
+			<Route path='/new' component={NewProject} />
+			<Route path='/profile' component={Profile} />
+			<Route path='/login' component={Login} />
+			<Route path='/register' component={Register} />
 		  </div>
 	  </Router>
     )
