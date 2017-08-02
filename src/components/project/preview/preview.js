@@ -14,7 +14,7 @@ class Preview extends Component {
 		return (
 			<div className="preview">
 				<div className="name">
-					<Link className="link" to={'/project/'+project.id}>{project.name}</Link>
+					<Link className="link" to={'/project/details/'+project.id}>{project.name}</Link>
 				</div>
 				<div className="description">
 					{this.sliceDescription(project.description)}

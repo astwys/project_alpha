@@ -22,7 +22,7 @@ class App extends Component {
 			<Navbar />
 			<Route exact path='/' component={Home} />
 			<Route path='/project/new' component={ProjectNew} />
-			<Route path='/project/:guid' component={ProjectDetails} />
+			<Route path='/project/details/:guid' component={ProjectDetails} />
 			<Route path='/profile' component={Profile} />
 			<Route path='/login' component={Login} />
 			<Route path='/register' component={Register} />
