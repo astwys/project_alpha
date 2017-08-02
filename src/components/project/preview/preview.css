@@ -1,0 +1,14 @@
+.preview {
+  grid-column: auto / span 2;
+  justify-self: center;
+  padding: 2vh 2vw; }
+  .preview:nth-child(2n+1) {
+    background-color: #3ad83a; }
+  .preview:nth-child(2n+2) {
+    background-color: #7c7c7c; }
+  @media (max-width: 80em) {
+    .preview {
+      grid-column: auto / span 3; } }
+  @media (max-width: 50em) {
+    .preview {
+      grid-column: auto / span 6; } }

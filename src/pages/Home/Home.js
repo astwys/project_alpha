@@ -14,7 +14,19 @@ const projects = [
 	{
 		name: 'Project3',
 		description: 'This is the third project.'
-	}
+	},
+	{
+		name: 'Project4',
+		description: 'This is the fourth project.'
+	},
+	{
+		name: 'Project5',
+		description: 'This is the fifth project.'
+	},
+	{
+		name: 'Project6',
+		description: 'This is the sixth project.'
+	},
 ]
 
 class Home extends Component {

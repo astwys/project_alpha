@@ -1,0 +1,19 @@
+@import '../../../imports/colors'
+
+.preview
+	grid-column: auto / span 2
+
+	justify-self: center
+	padding: 2vh 2vw
+
+	&:nth-child(2n+1)
+		background-color: $green
+
+	&:nth-child(2n+2)
+		background-color: $grey
+
+	@media (max-width: 80em)
+		grid-column: auto / span 3
+
+	@media (max-width: 50em)
+		grid-column: auto / span 6

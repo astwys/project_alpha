@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './preview.css'
 
 class Preview extends Component {
 	render() {
@@ -6,9 +7,9 @@ class Preview extends Component {
 
 		return (
 			<div className="preview">
-				<p className="title">
+				<h2 className="title">
 					{project.name}
-				</p>
+				</h2>
 				<p className="description">
 					{project.description}
 				</p>
