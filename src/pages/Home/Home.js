@@ -18,7 +18,9 @@ const projects = [
 class Home extends Component {
 	render() {
 		return (
-			<h1>projectAlpha</h1>
+			<div className="home">
+				<div className="projects"></div>
+			</div>
 		)
 	}
 }
