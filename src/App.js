@@ -7,6 +7,7 @@ import {
 
 import Home from 'sites/Home/Home'
 import NewProject from 'sites/Project/New/New'
+import Profile from 'sites/Profile/Profile'
 
 class App extends Component {
   render() {
@@ -16,9 +17,11 @@ class App extends Component {
 			  <ul>
 				  <li><Link to='/'>Home</Link></li>
 				  <li><Link to='/new'>Create New Project</Link></li>
+				  <li><Link to='/profile'>Profile Page</Link></li>
 			  </ul>
 			  <Route exact path='/' component={Home} />
 			  <Route path='/new' component={NewProject} />
+			  <Route path='/profile' component={Profile} />
 		  </div>
 	  </Router>
     )
