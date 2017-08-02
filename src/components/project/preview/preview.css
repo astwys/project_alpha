@@ -2,13 +2,15 @@
   grid-column: auto / span 2;
   padding: 4vh 2vw 6vh 2vw;
   border-radius: 4px;
-  align-self: start; }
+  align-self: start;
+  transition: all .5s; }
   .preview:nth-child(1n) {
-    background-color: #3ad83a; }
+    background-color: #48ba6c; }
   .preview:nth-child(2n) {
     background-color: #7c7c7c; }
   .preview:hover {
-    opacity: 0.85; }
+    border-radius: 20px;
+    transition: all .5s; }
   @media (max-width: 80em) {
     .preview {
       grid-column: auto / span 3; } }
@@ -21,8 +23,8 @@
     padding-bottom: 4vh; }
     .preview .name .link {
       text-decoration: none;
-      color: #cdcdcd; }
+      color: #2e2e2e; }
       .preview .name .link:hover {
-        color: white; }
+        color: #000; }
   .preview .description {
     font-weight: 300; }

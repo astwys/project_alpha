@@ -8,6 +8,8 @@
 
 	align-self: start
 
+	transition: all .5s
+
 	&:nth-child(1n)
 		background-color: $green
 
@@ -15,7 +17,9 @@
 		background-color: $grey
 
 	&:hover
-		opacity: 0.85
+		border-radius: 20px
+
+		transition: all .5s
 
 	@media (max-width: 80em)
 		grid-column: auto / span 3
@@ -30,10 +34,10 @@
 
 		.link
 			text-decoration: none
-			color: $white
+			color: $brightBlack
 
 			&:hover
-				color: $brightWhite
+				color: $black
 
 	.description
 		font-weight: 300
