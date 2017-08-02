@@ -45,9 +45,12 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+	"start": "npm-run-all -p css-watch react-start",
+	"css-watch": "$(npm bin)/node-sass-chokidar src/ -o src/ --watch --recursive",
+    "css-build": "$(npm bin)/node-sass-chokidar src/ -o src/",
+    "react-start": "node scripts/start.js",
+    "react-build": "node scripts/build.js",
+    "react-test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
