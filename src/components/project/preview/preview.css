@@ -1,7 +1,8 @@
 .preview {
   grid-column: auto / span 2;
-  justify-self: center;
-  padding: 2vh 2vw; }
+  padding: 4vh 2vw 6vh 2vw;
+  border-radius: 4px;
+  align-self: start; }
   .preview:nth-child(1n) {
     background-color: #3ad83a; }
   .preview:nth-child(2n) {
@@ -12,3 +13,9 @@
   @media (max-width: 50em) {
     .preview {
       grid-column: auto / span 6; } }
+  .preview .name {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 4vh; }
+  .preview .description {
+    font-weight: 300; }

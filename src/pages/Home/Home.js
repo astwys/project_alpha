@@ -5,7 +5,7 @@ import Preview from 'components/project/preview/preview'
 const projects = [
 	{
 		name: 'Project1',
-		description: 'This is the first project.'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 	},
 	{
 		name: 'Project2',
@@ -13,11 +13,11 @@ const projects = [
 	},
 	{
 		name: 'Project3',
-		description: 'This is the third project.'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem corporis commodi rerum'
 	},
 	{
 		name: 'Project4',
-		description: 'This is the fourth project.'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sed minus eos aliquid obcaecati ullam quia expedita fugiat! Soluta dolorem rerum harum odit ipsam'
 	},
 	{
 		name: 'Project5',
@@ -25,7 +25,7 @@ const projects = [
 	},
 	{
 		name: 'Project6',
-		description: 'This is the sixth project.'
+		description: 'Lorem ipsum dolor sit amet'
 	},
 ]
 
