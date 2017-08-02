@@ -8,7 +8,7 @@ class Navbar extends Component {
 			<div className="navbar">
 				<ul>
 					<li><Link className="link" to='/'>Home</Link></li>
-					<li><Link className="link" to='/new'>Create New Project</Link></li>
+					<li><Link className="link" to='/project/new'>Create New Project</Link></li>
 					<li><Link className="link" to='/profile'>Profile Page</Link></li>
 					<li><Link className="link" to='/login'>Login</Link></li>
 					<li><Link className="link" to='/register'>Register</Link></li>

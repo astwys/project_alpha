@@ -8,7 +8,8 @@ import 'App.css'
 import Navbar from 'components/navbar/navbar'
 
 import Home from 'pages/Home/Home'
-import NewProject from 'pages/Project/New/New'
+import ProjectNew from 'pages/Project/New/New'
+import ProjectDetails from 'pages/Project/Details/Details'
 import Profile from 'pages/Profile/Profile'
 import Login from 'pages/Login/Login'
 import Register from 'pages/Register/Register'
@@ -19,9 +20,9 @@ class App extends Component {
       <Router>
 		  <div>
 			<Navbar />
-
 			<Route exact path='/' component={Home} />
-			<Route path='/new' component={NewProject} />
+			<Route path='/project/new' component={ProjectNew} />
+			<Route path='/project/:guid' component={ProjectDetails} />
 			<Route path='/profile' component={Profile} />
 			<Route path='/login' component={Login} />
 			<Route path='/register' component={Register} />
