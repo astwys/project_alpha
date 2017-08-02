@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './Home.css'
+import Preview from 'components/project/preview/preview'
 
 const projects = [
 	{
@@ -19,7 +21,13 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="home">
-				<div className="projects"></div>
+				<div className="projects">
+					{
+						projects.map((project, i) => (
+							<Preview project={project} key={i} />
+						))
+					}
+				</div>
 			</div>
 		)
 	}
