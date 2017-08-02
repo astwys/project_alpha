@@ -1,11 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import {
+	BrowserRouter as Router,
+	Route, 
+	Link
+} from 'react-router-dom'
+
+import Home from 'sites/Home/Home'
 
 class App extends Component {
   render() {
     return (
-      <h1>projectAlpha</h1>
-    );
+      <Router>
+		  <div>
+			  <ul>
+				  <li><Link to='/'>Home</Link></li>
+			  </ul>
+			  <Route exact path='/' component={Home} />
+		  </div>
+	  </Router>
+    )
   }
 }
 
-export default App;
+export default App
