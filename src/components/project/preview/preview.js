@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './preview.css'
 
 class Preview extends Component {
 	sliceDescription(description) {
-		return description.slice(0, 100)
+		let dots = description.length >= 100 ? "..." : ""
+		return description.slice(0, 100) + dots
 	}
 
 	render() {
@@ -12,7 +14,7 @@ class Preview extends Component {
 		return (
 			<div className="preview">
 				<div className="name">
-					{project.name}
+					<Link className="link" to={'/project/'+project.id}>{project.name}</Link>
 				</div>
 				<div className="description">
 					{this.sliceDescription(project.description)}

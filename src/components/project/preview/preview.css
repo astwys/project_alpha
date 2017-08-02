@@ -7,6 +7,8 @@
     background-color: #3ad83a; }
   .preview:nth-child(2n) {
     background-color: #7c7c7c; }
+  .preview:hover {
+    opacity: 0.85; }
   @media (max-width: 80em) {
     .preview {
       grid-column: auto / span 3; } }
@@ -17,5 +19,10 @@
     font-size: 1.5em;
     font-weight: 700;
     padding-bottom: 4vh; }
+    .preview .name .link {
+      text-decoration: none;
+      color: #cdcdcd; }
+      .preview .name .link:hover {
+        color: white; }
   .preview .description {
     font-weight: 300; }
