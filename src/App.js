@@ -15,21 +15,37 @@ import Login from 'pages/Login/Login'
 import Register from 'pages/Register/Register'
 
 class App extends Component {
-  render() {
-    return (
-      <Router>
-		  <div>
-			<Navbar />
-			<Route exact path='/' component={Home} />
-			<Route path='/project/new' component={ProjectNew} />
-			<Route path='/project/details/:guid' component={ProjectDetails} />
-			<Route path='/profile' component={Profile} />
-			<Route path='/login' component={Login} />
-			<Route path='/register' component={Register} />
-		  </div>
-	  </Router>
-    )
-  }
+
+	showSidebar() {
+		let display = document.getElementById('navbar').style.display
+		let map = {
+			block: 'none',
+			none: 'block',
+			"": 'block'
+		}
+		document.getElementById('navbar').style.display = map[display]
+	}
+
+	render() {
+		return (
+			<Router>
+				<div className="wrapper">
+					<Navbar />
+					<div className="navbarIcon">
+						<a onClick={this.showSidebar}>&#9776;</a>
+					</div>
+					<div className="content">
+						<Route exact path='/' component={Home} />
+						<Route path='/project/new' component={ProjectNew} />
+						<Route path='/project/details/:guid' component={ProjectDetails} />
+						<Route path='/profile' component={Profile} />
+						<Route path='/login' component={Login} />
+						<Route path='/register' component={Register} />
+					</div>
+				</div>
+			</Router>
+		)
+	}
 }
 
 export default App
